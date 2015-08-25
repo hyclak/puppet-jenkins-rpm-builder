@@ -1,7 +1,7 @@
 class jenkins_rpm_builder (
-  installdir      = $jenkins_rpm_builder::params::installdir,
-  repo_url_prefix = $jenkins_rpm_builder::params::repo_url_prefix,
-  rpm_passphrase  = $jenkins_rpm_builder::params::rpm_passphrase,
+  $installdir      = $jenkins_rpm_builder::params::installdir,
+  $repo_url_prefix = $jenkins_rpm_builder::params::repo_url_prefix,
+  $rpm_passphrase  = $jenkins_rpm_builder::params::rpm_passphrase,
 ) inherits jenkins_rpm_builder::params {
 
   validate_absolute_path($installdir)
