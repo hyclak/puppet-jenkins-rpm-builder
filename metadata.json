@@ -1,0 +1,11 @@
+{
+  "name": "hyclak-jenkins_rpm_builder",
+  "version": "0.0.1",
+  "author": "Matt Hyclak <hyclak@gmail.com>",
+  "summary": "Install a jenkins-rpm-builder",
+  "license": "Apache-2.0",
+  "source": "https://github.com/hyclak/puppet-jenkins-rpm-builder",
+  "dependencies": [
+    {"name": "puppetlabs-stdlib", "version_requirement": ">= 4.3.2"}
+  ]
+}
